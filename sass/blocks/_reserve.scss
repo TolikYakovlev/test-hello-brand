@@ -1,0 +1,358 @@
+.reserve {
+    background-image: url("./../../img/wallpapper.jpg");
+    width: auto;
+    height: 901px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        height: 700px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        height: 500px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        height: 600px;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    margin-bottom: 154px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-top: 25px;
+        margin-bottom: 100px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+}
+
+.nav__logo {
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 200px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-bottom: 20px;
+    }
+}
+
+.nav__menu {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 14px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: #2D2D2D;
+        transform: translateX(100%);
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 100px;
+        font-size: 16px;
+        color: #fff;
+        width: 240px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    & a {
+        margin-right: 45px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            margin-right: 25px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    & a:hover {
+        color: #D3B47F;
+
+    }
+}
+
+.nav__menu--active {
+
+    /* Mobile S */
+    @media (max-width: 899px) {
+        margin-top: 0;
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 0.2s ease-in;
+        z-index: 10;
+    }
+}
+
+
+.nav__contact {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 14px;
+    }
+
+    & svg {
+        margin-right: 11px;
+    }
+
+    &:hover {
+        color: #D3B47F;
+    }
+}
+
+.open {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 16px;
+        text-align: center;
+    }
+
+}
+
+.reserve__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 88px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 56px;
+        line-height: 70px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.reserve__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        flex-direction: column;
+    }
+}
+
+.reserve__button {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 38px 65px;
+    background-color: #3A4574;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+        color: #3A4574;
+        background-color: #FFFFFF;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding: 30px 50px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 16px;
+        padding: 20px 30px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-bottom: 25px;
+    }
+}
+
+.social {
+    & a {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-right: 25px;
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        transition: all ease-in-out 0.3s;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    & a:hover {
+        color: #3A4574;
+        border: 1px solid #3A4574;
+        background-color: #FFFFFF;
+    }
+}
+
+.social__fb {
+    padding-right: 15px;
+    padding-left: 13px;
+}
+
+.social__ig {
+    padding-right: 17px;
+    padding-left: 15px;
+}
+
+.social__tw {
+    padding-right: 13px;
+    padding-left: 12px;
+}
+
+.social__yt {
+    padding-right: 16px;
+    padding-left: 15px;
+}
+
+.nav-icon {
+    width: 30px;
+    height: 25px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    /* Mobile S */
+    @media (max-width: 899px) {
+        position: fixed;
+        top: 30px;
+        right: 15px;
+        display: flex;
+    }
+}
+
+.nav-icon__middle {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: #FFFFFF;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 5px;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        background-color: #FFFFFF;
+    }
+
+    &::before {
+        top: -10px;
+    }
+
+    &::after {
+        top: 10px;
+    }
+}
+
+.nav-icon.nav-icon--active {
+    position: fixed;
+    top: 30px;
+    right: 15px;
+    z-index: 12;
+}
+
+.nav-icon.nav-icon--active .nav-icon__middle {
+    background-color: transparent;
+    $color: #fff;
+
+    &::before,
+    &::after {
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        background-color: #FFFFFF;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
